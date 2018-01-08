@@ -1,0 +1,27 @@
+{
+  "name": "d1.weather-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olgagubina/w4.d1.Weather-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olgagubina/w4.d1.Weather-chat/issues"
+  },
+  "homepage": "https://github.com/olgagubina/w4.d1.Weather-chat#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "handlebar": "^1.0.0",
+    "jquery": "3.2.1"
+  }
+}

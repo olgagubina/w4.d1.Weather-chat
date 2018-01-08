@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-chat</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="page-header">
+                <h1>Weather-chat
+                    <img class="rocket" src="animat-rocket-color.gif" alt="Weather">
+                </h1>
+            </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="city-input" placeholder="Enter the City">
+            </div>
+            <button class="btn btn-primary pull" type="button">Search</button>
+        </form><br><br>        
+        <div class="weather-posts"></div>
+        <br>
+        </div>
+    </div>
+ 
+    <!-- Scripts -->
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="handlebars/dist/handlebars.min.js"></script> 
     
+    <!-- Post template -->
+    <script id="weather-template" type="text/x-handlebars-template">
+        {{#each cities}}
+        <div  class="post-container">
+            <a class="btn btn-danger delete"><i class="fa fa-trash-o fa-lg"></i></a>
+            <h3 class="city-name">{{city}}</h3>
+            <p>{{tempCelc}}°C/{{tempFar}}°F at {{hours}}:{{minutes}} on {{date}}/{{month}}/{{year}}</p>
+            <div class="comment-list"></div>
+            <div class="comment-form"> 
+                <input type="text" class="comment" placeholder="Comment about the weather">
+                <button class="btn btn-primary comment-btn" type="button">Comment</button>
+            </div>
+        </div><br><br>  
+        {{/each}}
+    </script>
+    
+    <!-- Main JS -->
+    <script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #12395F;
+}
+
+.rocket {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-group {
+    display: inline-block;
+    width: 89%;
+    margin: 0;
+}
+
+.city-input {
+    width: 100%;
+    line-height: 27px;
+    border-radius: 5px;
+    border: 1px solid #12395F;
+    background-color: #CEE8E0;
+}
+
+.pull {
+    width: 10%;
+    background-color: #F69D88;
+    border: none;
+    border: 1px solid #12395F;
+    line-height: 17px;
+}
+
+.post-container {
+    border: 1px solid #12395F;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6); 
+    padding: 10px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+.city-name {
+    text-transform: uppercase;
+    color: #12395F;
+    margin-top: 0;
+}
+ 
+p {
+    color: #12395F;
+}
+
+.comment-form {
+    width: 100%;
+}
+
+.comment {
+    width: 89%;
+    line-height: 27px;
+    border-radius: 5px;
+    border: 1px solid #12395F;
+}
+
+.comment-btn {
+    width: 10%;
+    background-color:#F69D88;
+    border: none;
+    border: 1px solid #12395F;
+    line-height: 17px;
+}
+
+.delete {
+    float: right;
+    border: 1px solid #12395F;
+    background-color:rgba(119, 73, 119, 0.966);
+}
